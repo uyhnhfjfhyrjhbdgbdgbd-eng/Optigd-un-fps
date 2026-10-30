@@ -1,0 +1,60 @@
+{
+  "geode": "5.11.2",
+  "gd": {
+    "win": "2.2081",
+    "android": "2.2081"
+  },
+  "id": "tunombre.optigd-800",
+  "name": "OptiGD 800",
+  "version": "v1.1.0",
+  "developer": "TuNombre",
+  "description": "Sube el límite de FPS a 1000 y, si un nivel va con lag, reduce efectos automáticamente.",
+  "settings": {
+    "enabled": {
+      "type": "bool",
+      "name": "Activar OptiGD",
+      "description": "Activa el modo de alto rendimiento.",
+      "default": true
+    },
+    "fps-limit": {
+      "type": "int",
+      "name": "Límite de FPS",
+      "description": "FPS máximos cuando está activado.",
+      "default": 1000,
+      "min": 10,
+      "max": 9999
+    },
+    "show-fps": {
+      "type": "bool",
+      "name": "Mostrar FPS",
+      "description": "Muestra el contador de FPS en pantalla.",
+      "default": true
+    },
+    "no-particles": {
+      "type": "bool",
+      "name": "Sin partículas siempre",
+      "description": "Oculta siempre las partículas. Si está apagado, solo se ocultan cuando hay lag.",
+      "default": false
+    },
+    "disable-vsync": {
+      "type": "bool",
+      "name": "Desactivar V-Sync (solo PC)",
+      "description": "Quita el límite de la pantalla. No afecta a Android.",
+      "default": true
+    },
+    "auto-lag": {
+      "type": "bool",
+      "name": "Anti-lag automático",
+      "description": "En un nivel con lag, reduce efectos solo hasta que se recupere.",
+      "default": true
+    },
+    "lag-fps": {
+      "type": "int",
+      "name": "FPS para considerar lag",
+      "description": "Si los FPS bajan de este valor, se activa el anti-lag.",
+      "default": 60,
+      "min": 20,
+      "max": 300
+    }
+  }
+}
